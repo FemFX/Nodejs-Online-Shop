@@ -1,0 +1,33 @@
+.thumbnail img {
+  max-height: 150px;
+}
+.product {
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.thumbnail {
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+.thumbnail .description {
+  color: #7f7f7f;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 16px;
+}
+a {
+  color: #fff;
+}
+.products {
+  text-align: center;
+}
+.product-img {
+  max-width: 500px;
+  margin: 25px;
+  padding: 50px;
+}
