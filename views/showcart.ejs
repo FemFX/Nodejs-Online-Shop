@@ -1,0 +1,26 @@
+<% include partials/header.ejs %>
+<div class="container">
+  <h2>Shopping cart</h2>
+  <table class="table table-striped mt-5 mb-5">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody id="book-list">
+      <% products.forEach(product => {%>
+      <tr>
+        <th><%=product.title %></th>
+        <th><%=product.description %></th>
+        <th>$<%=product.price %></th>
+        <th><a href="/cart/delete/<%= product._id%>" class="btn btn-danger">Remove</a></th>
+      </tr>
+      <%}) %>
+    </tbody>
+  </table>
+
+  <h4 class="mt-5">Total price : $<%= sum %></h4>
+</div>
+<% include partials/footer.ejs %>
